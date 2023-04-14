@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in, for of, for반복문</title>
+  </head>
+  <body>
+    <script>
+      // for in, for of는 배열과 함께 사용
+      const 배열 = ['바나나', '딸기', '포도']
+      // for (const 인덱스 in 배열) {
+      //   console.log(`${인덱스}번째 과일 종류:${배열[인덱스]}`)
+      // }
+      // 0번째 과일 종류: 바나나 // 1번째 과일 종류: 딸기 // 2번째 과일 종류: 포도
+
+      for (const 인덱스 of 배열) {
+        console.log(`과일 종류:${인덱스}`)
+      }
+      // 과일 종류: 바나나 // 과일 종류: 딸기 // 과일 종류: 포도
+
+      // for는 범용적인 반복문 , 특정 횟수만큼 반복하고 싶을 때 사용 
+      for (let i = 0; i < 5; i++) {
+        console.log(`${i}번째 반복입니다.`)
+      }
+      // 0번째 반복입니다. ...... /// 4번째 반복입니다.
+
+      // 1부터 100까지 더하기
+      // let output = 0
+      // for (let i = 1; i <= 100; i++){
+      //   output += i
+      // }
+      // console.log(`1~100까지 숫자를 모두 더하면 ${output}입니다.`)
+
+      // 반복문 배열을 반대로 출력하기
+      const todos = ['우유 구매', '업무 메일 확인하기', '필라테스 수업']
+
+      for (let i = todos.length -1; i>= 0; i--) {
+        console.log(`${i}번째 할 일: ${todos[i]}`)
+      }
+    </script>
+  </body>
+</html>
