@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while</title>
+  </head> 
+  <body>
+    <script>
+      let i = 0
+      const array = [1,2,3,4,5]
+
+      while (i < array.length){
+        console.log(`${i}: ${array[i]}`)
+        i++
+      }
+
+    //   // break 키워드 : 반복문을 벗어날 때 사용하는 키워드 
+    //   // 반복문
+    //   for (let i = 0; true; i++) {
+    //     alert(i + '번째 반복문 입니다.')
+    //   // 진행여부를 물어본다.
+    //   const isContinue = confirm('계속 하시겠습니까?')
+    //   if (!isContinue) {
+    //     break
+    //   }
+    // }
+    // // 프로그램의 종료를 확인합니다
+    // alert('프로그램 종료')
+
+    // continue 키워드 : 반복문의 처음으로 돌아가 다음 반복작업을 진행
+    // for (let i = 0; i < 5; i++) {
+    //   continue
+    //   alert(i)
+    // }
+    // continue가 들어가 있어서 계속 초반 작업으로 돌아가기 때문에 alert가 실행되지 않음 
+
+    let output = 0
+    for (let i = 1; i <= 10; i++){
+      if(i % 2 === 1) {
+        // 홀수면 현재 반복을 중지하고 다음 반복을 수행한다. 
+        continue
+      } 
+      output += i
+      // for문이 끝나야 이 문장을 벗어날 수 있음 
+    }
+
+    alert(output)
+    //
+    </script>
+  </body>
+</html>
