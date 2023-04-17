@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩문 피라미드</title>
+  </head>
+  <body>
+    <script>
+      // 트리만들기 1
+      // let output = ''
+      // const num = 10
+      // for (let i = 1; i < num + 1; i++) {
+      //   for (let z = 0; z < i; z++) {
+      //     output += '*'
+      //   }
+      //   output += '\n'
+      // }
+      // console.log(output)
+      // 조건문은 n회차까지 모두 돌고 값을 출력함 
+
+      // 트리만들기 2 : 중앙정렬된 트리를 만들어라 
+      // let output = ''
+      // const num = 15
+      // for (let i = 1; i < num; i++) {
+      //   // 전체 줄 생성 
+      //   for (let j = num; j > i; j--) {
+      //     // 공백 생성 
+      //     output += ' '
+      //   }
+      //   for (let j = 1; j < 2 * i; j++) {
+      //     // 내부 별 생성 
+      //     output += '*'
+      //   }
+      //   output += '\n'
+      // }
+      // console.log(output)
+
+      // 원모타임 
+      let output = ''
+      const num = 6
+      for (let i = 1; i < num; i++) {
+        for (let j = num; j > i; j--) {
+          output += ' '
+        }
+        for (let j = 1; j < i * 2; j++) {
+          output += '*'
+        }
+        output += '\n'
+      }
+      console.log(output)
+
+      // for (let k = 0; k < i * 2 -1; k++
+
+      // 숫자로 찍어보기 
+      // let output = ''
+      // for (let i = 1; i < 6; i++) {
+      //   for (let j = 1; j < i; j++) {
+      //     output += j
+      //   }
+      //   output += '\n'
+      // }
+      // console.log(output)
+
+      // 숫자로 역순찍어보기
+      // let output = ''
+      // for (let i = 6; i > 1; i--) {
+      //   for (let j = 1; j < i; j++) {
+      //     output += j
+      //   }
+      //   output += '\n'
+      // }
+      // console.log(output)
+
+      // 에스크로 역순으로 찍어보기 + 공백
+      // let output = ''
+      // for (let i = 6; i > 1; i--) {
+      //   for (let k = 5; k >= i; k--) {
+      //     output += ' '
+      //   }
+      //   for (let j = 1; j < i; j++) {
+      //     output += '*'
+      //   }
+      //   output += '\n'
+      // }
+      // console.log(output)
+
+      // 다이아몬드 만들기
+      // let output = ''
+      // const num = 5
+      // for (let i = 0; i < num; i++) {
+      //   for (let j = num; j > i; j--) {
+      //     output += ' '
+      //   }
+      //   for (let j = 0; j <= 2 * i; j++) {
+      //     output += '*'
+      //   }
+      //   output += '\n'
+      // }
+      // for (let i = num -1; i > 0; i--) {
+      //   for (let j = i; j <= num; j++) {
+      //     output += ' '
+      //   }
+      //   for (let j = 2 * i -1; j > 0; j--) {
+      //     output += '*'
+      //   }
+      //   output += '\n'
+      // }
+      // console.log(output)
+    </script>
+  </body>
+</html>
