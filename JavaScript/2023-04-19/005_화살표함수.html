@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 함수</title>
+  </head>
+  <body>
+    <script>
+      // 화살표 함수: 단순한 형태의 콜백함수를 쉽게 입력하고자 생성된 방법. function 대신 => 를 사용하여 생성한다.
+      // (매개변수) => {}
+      const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      
+      numbers
+      .filter((value) => value % 2 === 0)
+      .map((value) => value * value)
+      .forEach((value) => {
+        console.log(value)
+      })
+    </script>
+
+  </body>
+</html>
