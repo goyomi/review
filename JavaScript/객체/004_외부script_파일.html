@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <title></title>
+    <script src="test.js"></script>
+    <!-- 외부파일이 먼저 실행됨 더 윗쪽에 있기 때문에 -->
+    <script>
+      console.log('#main.html의 script 태그')
+      console.log('sample 값:', sample)
+    </script>
+  </body>
+</html>
