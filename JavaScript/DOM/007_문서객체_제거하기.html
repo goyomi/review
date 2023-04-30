@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문서객체제거하기</title>
+</head>
+
+<body>
+  <hr>
+  <h1>제거 대상 문서 객체</h1>
+  <hr>
+  <script>
+    setTimeout(() => {
+      const h1 = document.querySelector('h1')
+      h1.parentNode.removeChild(h1)
+    }, 3000)
+
+    // setTimeout(functionRef, delay)
+    // functionRef : function타이머가 만료된 후 실행될 A 입니다.
+    // delay : 지정된 함수 또는 코드가 실행되기 전에 타이머가 대기해야 하는 시간(밀리초)입니다.
+  </script>
+
+</body>
+
+</html>

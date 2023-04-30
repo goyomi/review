@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글자조작하기</title>
+</head>
+
+<body>
+  <div id="a"></div>
+  <div id="b"></div>
+
+  <script>
+    const a = document.querySelector('#a')
+    const b = document.querySelector('#b')
+
+    a.textContent = '<h1>textContent 속성</h1>'
+    b.innerHTML = '<h1>textContent 속성</h1>'
+    // <h1>textContent 속성</h1>
+    // textContent 속성 (h1태그 특성 입혀짐)
+  </script>
+
+</body>
+
+</html>
